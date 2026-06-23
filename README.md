@@ -1,8 +1,20 @@
 ## SQL Real-World Scenarios and Solutions
 ---
-### Scenario 1 : Employee Salary Filtering
+### Scenario 1: Employee Salary Filtering
 
-A company wants to find all employees with a salary greater than $50,000. Write an SQL query to retrieve the required employee records.
+A company wants to find all employees with a salary greater than 50,000. Write an SQL query to retrieve the required employee records.
+
+## Table Structure: 'employees'
+
+| Column        | Data Type          |
+|---------------|--------------------|
+| employee_id   | INTEGER (PK)       |
+| first_name    | VARCHAR(50)        |
+| last_name     | VARCHAR(50)        |
+| department_id | INTEGER            |
+| salary        | NUMERIC(10,2)      |
+| hire_date     | DATE               |
+| manager_id    | INTEGER            |
 
 ### SQL Query
 
@@ -16,6 +28,7 @@ SELECT *
 
 ###  Query Logic
 
-The WHERE clause is used to filter employees with a salary greater than 50,000.
+The WHERE clause filters rows based on a condition. Only employeeswith salary greater than 50,000 are returned. Rows with salary equal
+to or less than 50,000 are excluded.
 
 
