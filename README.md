@@ -54,8 +54,11 @@ HAVING COUNT(*) > 1;
 ### Query Logic
 
 The GROUP BY clause groups all rows by email address. 
+
 The COUNT(*) counts how many times each email appears. 
+
 The HAVING clause filters and returns only those emails 
+
 where the count is greater than 1, indicating duplicates.
 
 ---
@@ -86,7 +89,10 @@ WHERE employee_id = 5;
 ## Query Logic
 
 The UPDATE statement modifies existing records in a table.
+
 The SET clause specifies the column and its new correct value.
+
 The WHERE clause ensures only the targeted row is updated.
+
 Without WHERE, all rows in the table would be updated.
 
