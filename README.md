@@ -4,17 +4,9 @@
 
 A company wants to find all employees with a salary greater than 50,000. Write an SQL query to retrieve the required employee records.
 
-## Table Structure: 'employees'
+**Table Name:** `employees`
 
-| Column        | Data Type          |
-|---------------|--------------------|
-| employee_id   | INTEGER (PK)       |
-| first_name    | VARCHAR(50)        |
-| last_name     | VARCHAR(50)        |
-| department_id | INTEGER            |
-| salary        | NUMERIC(10,2)      |
-| hire_date     | DATE               |
-| manager_id    | INTEGER            |
+## Table Structure: 'employees'
 
 <img width="879" height="45" alt="image" src="https://github.com/user-attachments/assets/4fd795ec-f169-4b6b-b74f-1d2d0f2741af" />
 
