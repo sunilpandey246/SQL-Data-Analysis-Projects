@@ -164,3 +164,47 @@ ASC (Ascending) is the default — it sorts from lowest to highest.
 
 Without ORDER BY, SQL does not guarantee any specific order of results.
 
+---
+
+## Scenario 6: Retrieving Customers with Their Orders
+
+Two tables contain customer and order information. How would 
+you retrieve customers along with their orders?
+
+## Table Structure: `customers`
+
+| Column    | customer_id  | customer_name | email        | phone       | status      | register_date |
+|-----------|--------------|---------------|--------------|-------------|-------------|---------------|
+| Data Type | INTEGER (PK) | VARCHAR(100)  | VARCHAR(150) | VARCHAR(15) | VARCHAR(20) | DATE          |
+
+## Table Structure: `orders`
+
+| Column    | order_id     | customer_id | order_date | total_amount  | product_id |
+|-----------|--------------|-------------|------------|---------------|------------|
+| Data Type | INTEGER (PK) | INTEGER     | DATE       | NUMERIC(10,2) | INTEGER    |
+
+## SQL Query
+
+```sql
+SELECT c.customer_id, c.customer_name, o.order_id, o.order_date
+FROM customers c
+INNER JOIN orders o
+ON c.customer_id = o.customer_id;
+```
+
+## Query Output
+
+<img width="899" height="292" alt="image" src="https://github.com/user-attachments/assets/e5358325-28a4-4c25-87bf-ad0cb035bec8" />
+
+
+## Query Logic
+
+INNER JOIN combines rows from two tables based on a matching condition.
+
+The ON clause defines the join condition — here customer_id 
+is the common column between both tables.
+
+Only customers who have placed at least one order are returned.
+
+Customers with no orders are excluded from the result.
+
