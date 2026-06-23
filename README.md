@@ -28,7 +28,6 @@ SELECT *
 
 ###  Query Logic
 
-The WHERE clause filters rows based on a condition. Only employeeswith salary greater than 50,000 are returned. Rows with salary equal
-to or less than 50,000 are excluded.
+The **WHERE** clause filters rows based on a condition. Only employees with salary greater than 50,000 are returned. Rows with salary equalto or less than 50,000 are excluded.
 
 
