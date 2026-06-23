@@ -4,7 +4,7 @@
 
 A company wants to find all employees with a salary greater than 50,000. Write an SQL query to retrieve the required employee records.
 
-## Table Structure: 'employees'
+## Table Structure: `employees`
 
 | employee_id | first_name | last_name | department_id | salary | hire_date | manager_id |
 |-------------|------------|-----------|---------------|--------|-----------|------------|
