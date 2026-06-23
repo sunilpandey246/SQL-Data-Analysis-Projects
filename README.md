@@ -4,12 +4,11 @@
 
 A company wants to find all employees with a salary greater than 50,000. Write an SQL query to retrieve the required employee records.
 
-**Table Name:** `employees`
-
 ## Table Structure: 'employees'
 
-<img width="879" height="45" alt="image" src="https://github.com/user-attachments/assets/4fd795ec-f169-4b6b-b74f-1d2d0f2741af" />
-
+| employee_id | first_name | last_name | department_id | salary | hire_date | manager_id |
+|-------------|------------|-----------|---------------|--------|-----------|------------|
+| INTEGER (PK)| VARCHAR(50)| VARCHAR(50)| INTEGER      | NUMERIC(10,2) | DATE | INTEGER |
 
 ### SQL Query
 
@@ -23,6 +22,6 @@ SELECT *
 
 ###  Query Logic
 
-The **WHERE** clause filters rows based on a condition. Only employees with salary greater than 50,000 are returned. Rows with salary equalto or less than 50,000 are excluded.
+The **WHERE** clause filters rows based on a condition. Only employees with salary greater than 50,000 are returned. Rows with salary equal to or less than 50,000 are excluded.
 
 
