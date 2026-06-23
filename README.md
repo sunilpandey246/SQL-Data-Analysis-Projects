@@ -37,10 +37,12 @@ A customer table contains duplicate email addresses. Write an SQL query to ident
 
 ### SQL Query
 
+```sql
 SELECT email, COUNT(*) AS count
 FROM customer
 GROUP BY email
 HAVING COUNT(*) > 1;
+```
 
 ### Query Output
 
