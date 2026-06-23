@@ -58,3 +58,35 @@ The COUNT(*) counts how many times each email appears.
 The HAVING clause filters and returns only those emails 
 where the count is greater than 1, indicating duplicates.
 
+---
+
+## Scenario 3: Correcting Wrong Data
+
+You accidentally inserted wrong data into a table. How would you correct it?
+
+## Table Structure: `employees`
+
+| Column    | employee_id  | first_name  | last_name   | department_id | salary        | hire_date | manager_id |
+|-----------|--------------|-------------|-------------|---------------|---------------|-----------|------------|
+| Data Type | INTEGER (PK) | VARCHAR(50) | VARCHAR(50) | INTEGER       | NUMERIC(10,2) | DATE      | INTEGER    |
+
+## SQL Query
+
+```sql
+UPDATE employees
+SET salary = 60000
+WHERE employee_id = 5;
+```
+
+## Query Output
+
+<img width="932" height="109" alt="image" src="https://github.com/user-attachments/assets/4a2a328d-9f54-47a8-9003-5a645686f87f" />
+
+
+## Query Logic
+
+The UPDATE statement modifies existing records in a table.
+The SET clause specifies the column and its new correct value.
+The WHERE clause ensures only the targeted row is updated.
+Without WHERE, all rows in the table would be updated.
+
