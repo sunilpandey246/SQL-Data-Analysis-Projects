@@ -96,3 +96,37 @@ The WHERE clause ensures only the targeted row is updated.
 
 Without WHERE, all rows in the table would be updated.
 
+---
+
+## Scenario 4: Finding NULL Phone Numbers
+
+A customers table contains NULL values in the phone number column. How would you retrieve only rows with missing phone numbers?
+
+## Table Structure: `customers`
+
+| Column    | customer_id  | customer_name | email        | phone       | status      | register_date |
+|-----------|--------------|---------------|--------------|-------------|-------------|---------------|
+| Data Type | INTEGER (PK) | VARCHAR(100)  | VARCHAR(150) | VARCHAR(15) | VARCHAR(20) | DATE          |
+
+## SQL Query
+
+```sql
+SELECT *
+FROM customers
+WHERE phone IS NULL;
+```
+
+## Query Output
+
+<img width="981" height="255" alt="image" src="https://github.com/user-attachments/assets/080b3c1b-e820-4e4e-96da-798e3c30165e" />
+
+
+## Query Logic
+
+The IS NULL condition checks for missing or empty values in a column.
+
+Only rows where the phone column has no value are returned.
+
+IS NULL is different from = NULL — in SQL, NULL cannot be 
+compared using = operator, IS NULL is the correct syntax.
+
