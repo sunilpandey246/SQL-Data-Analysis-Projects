@@ -1,6 +1,6 @@
 ## SQL Real-World Scenarios and Solutions
 
-### Scenario
+### Scenario 1: Employee Salary Filtering
 
 A company wants to find all employees with a salary greater than $50,000. Write an SQL query to retrieve the required employee records.
 
