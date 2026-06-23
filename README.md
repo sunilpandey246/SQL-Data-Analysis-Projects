@@ -14,4 +14,8 @@ SELECT *
 
 <img width="961" height="293" alt="image" src="https://github.com/user-attachments/assets/ababc831-0744-497a-8263-c6fbf77ac36d" />
 
+###  Query Logic
+
+The WHERE clause is used to filter employees with a salary greater than 50,000.
+
 
