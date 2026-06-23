@@ -130,3 +130,37 @@ Only rows where the phone column has no value are returned.
 IS NULL is different from = NULL — in SQL, NULL cannot be 
 compared using = operator, IS NULL is the correct syntax.
 
+---
+
+## Scenario 5: Sorting Employees by Highest Salary
+
+You want to display employees sorted by highest salary first. Which clause would you use?
+
+## Table Structure: `employees`
+
+| Column    | employee_id  | first_name  | last_name   | department_id | salary        | hire_date | manager_id |
+|-----------|--------------|-------------|-------------|---------------|---------------|-----------|------------|
+| Data Type | INTEGER (PK) | VARCHAR(50) | VARCHAR(50) | INTEGER       | NUMERIC(10,2) | DATE      | INTEGER    |
+
+## SQL Query
+
+```sql
+SELECT *
+FROM employees
+ORDER BY salary DESC;
+```
+
+## Query Output
+
+<img width="968" height="269" alt="image" src="https://github.com/user-attachments/assets/2eac9000-5f99-4ca5-90bf-5497e50ead54" />
+
+## Query Logic
+
+The ORDER BY clause sorts the result set based on a specified column.
+
+DESC (Descending) arranges values from highest to lowest.
+
+ASC (Ascending) is the default — it sorts from lowest to highest.
+
+Without ORDER BY, SQL does not guarantee any specific order of results.
+
