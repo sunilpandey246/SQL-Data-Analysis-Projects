@@ -16,6 +16,9 @@ A company wants to find all employees with a salary greater than 50,000. Write a
 | hire_date     | DATE               |
 | manager_id    | INTEGER            |
 
+<img width="879" height="45" alt="image" src="https://github.com/user-attachments/assets/4fd795ec-f169-4b6b-b74f-1d2d0f2741af" />
+
+
 ### SQL Query
 
 SELECT *
