@@ -65,7 +65,7 @@ where the count is greater than 1, indicating duplicates.
 
 ## Scenario 3: Correcting Wrong Data
 
-You accidentally inserted wrong data into a table. How would you correct it?
+A data entry error was made in the employees table — the salary for employee_id 5 was entered as 30,000 instead of 60,000. Write a query to fix this.
 
 ## Table Structure: `employees`
 
