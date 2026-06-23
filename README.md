@@ -12,9 +12,11 @@ A company wants to find all employees with a salary greater than 50,000. Write a
 
 ### SQL Query
 
+```sql
 SELECT *
-    FROM employees	
-    WHERE salary > 50000;
+FROM employees
+WHERE salary > 50000;
+```
 
 ### 📊 Query Output
 
@@ -39,7 +41,7 @@ A customer table contains duplicate email addresses. Write an SQL query to ident
 
 ```sql
 SELECT email, COUNT(*) AS count
-FROM customer
+FROM customers
 GROUP BY email
 HAVING COUNT(*) > 1;
 ```
