@@ -31,7 +31,7 @@ The **WHERE** clause filters rows based on a condition. Only employees with sala
 
 A customer table contains duplicate email addresses. Write an SQL query to identify all duplicate emails.
 
-### Table Structure: `customer`
+### Table Structure: `customers`
 
 | Column          | customer_id  | customer_name   | email           | phone           | status          | register_date |
 |-----------------|--------------|-----------------|-----------------|-----------------|-----------------|---------------|
