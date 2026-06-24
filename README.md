@@ -400,6 +400,26 @@ The **UPDATE** statement modifies existing records in a table. The **SET** claus
 
 ---
 
+<img width="1077" height="510" alt="image" src="https://github.com/user-attachments/assets/0e6d63fd-6e10-4836-8916-b3fddb372d36" />
+
+
+---
+
+<img width="1073" height="514" alt="image" src="https://github.com/user-attachments/assets/840751e9-52df-42a4-86b4-e87b3d61b827" />
+
+---
+
+<img width="1087" height="501" alt="image" src="https://github.com/user-attachments/assets/b83855d7-3a91-4057-95d5-0a187de630ce" />
+
+---
+
+<img width="1065" height="517" alt="image" src="https://github.com/user-attachments/assets/0f23a646-5e18-41ba-9129-d28835899ff4" />
+
+---
+
+
+
+
 ## 👤 Author: Sunil Pandey  
 ## 📧 Contact: sunilpandey2468@gmail.com
 
