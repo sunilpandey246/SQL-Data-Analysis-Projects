@@ -274,12 +274,13 @@ GROUP BY employee_id;
 
 ## 📊 Query Output
 
-<img width="953" height="277" alt="image" src="https://github.com/user-attachments/assets/0b08dff9-3e87-4690-a0a1-fb9ca9bf7dea" />
-
+<img width="746" height="271" alt="image" src="https://github.com/user-attachments/assets/7cfe8618-73d9-45dd-a424-42d9b0620979" />
 
 ## Query Logic
 
 The **SUM()** function calculates the total sales amount for each employee. The **GROUP BY** clause groups records based on `employee_id`, allowing SQL to calculate the total sales separately for each employee. The result contains one row per employee along with their total sales amount.
+
+---
 
 
 
