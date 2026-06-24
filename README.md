@@ -282,6 +282,35 @@ The **SUM()** function calculates the total sales amount for each employee. The 
 
 ---
 
+## Scenario 9: Counting Employees in Each Department
+
+You want to count how many employees work in each department. How would you do it?
+
+## Table Structure: `employees`
+
+| employee_id | first_name | last_name | department_id | salary | hire_date | manager_id |
+|-------------|------------|-----------|---------------|--------|-----------|------------|
+| INTEGER (PK) | VARCHAR(50) | VARCHAR(50) | INTEGER | NUMERIC(10,2) | DATE | INTEGER |
+
+## SQL Query
+
+```sql
+SELECT department_id,
+       COUNT(*) AS employee_count
+FROM employees
+GROUP BY department_id;
+```
+
+## 📊 Query Output
+
+<img width="825" height="286" alt="image" src="https://github.com/user-attachments/assets/71a86adc-d3bc-455f-a358-d3117b6d7fc4" />
+
+## Query Logic
+
+The **COUNT()** function counts the number of employees in each department. The **GROUP BY** clause groups records based on `department_id`, allowing SQL to calculate the employee count separately for each department. The result contains one row per department along with the total number of employees working in that department.
+
+---
+
 
 
 
