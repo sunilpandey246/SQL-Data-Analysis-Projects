@@ -253,6 +253,34 @@ The result shows customers with no order history.
 
 ---
 
+## Scenario 8: Calculating Total Sales by Employee
+
+A manager asks for the total sales made by each employee. Which SQL function and clause would help?
+
+## Table Structure: `sales`
+
+| sale_id | employee_id | sale_date | sales_amount |
+|----------|------------|------------|-------------|
+| INTEGER (PK) | INTEGER | DATE | NUMERIC(10,2) |
+
+## SQL Query
+
+```sql
+SELECT employee_id,
+       SUM(sales_amount) AS total_sales
+FROM sales
+GROUP BY employee_id;
+```
+
+## 📊 Query Output
+
+<img width="953" height="277" alt="image" src="https://github.com/user-attachments/assets/0b08dff9-3e87-4690-a0a1-fb9ca9bf7dea" />
+
+
+## Query Logic
+
+The **SUM()** function calculates the total sales amount for each employee. The **GROUP BY** clause groups records based on `employee_id`, allowing SQL to calculate the total sales separately for each employee. The result contains one row per employee along with their total sales amount.
+
 
 
 
