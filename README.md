@@ -208,3 +208,51 @@ Only customers who have placed at least one order are returned.
 
 Customers with no orders are excluded from the result.
 
+---
+## Scenario 7: Finding Customers Without Orders
+
+You need to find customers who have not placed any orders. Which join would you use?
+
+## Table Structure: `customers`
+
+| Column    | customer_id  | customer_name | email        | phone       | status      | register_date |
+|-----------|--------------|---------------|--------------|-------------|-------------|---------------|
+| Data Type | INTEGER (PK) | VARCHAR(100)  | VARCHAR(150) | VARCHAR(15) | VARCHAR(20) | DATE          |
+
+## Table Structure: `orders`
+
+| Column    | order_id     | customer_id | order_date | total_amount  | product_id |
+|-----------|--------------|-------------|------------|---------------|------------|
+| Data Type | INTEGER (PK) | INTEGER     | DATE       | NUMERIC(10,2) | INTEGER    |
+
+## SQL Query
+
+```sql
+SELECT c.customer_id, c.customer_name
+    FROM customers c
+    LEFT JOIN orders o
+    ON c.customer_id = o.customer_id
+    WHERE o.order_id IS NULL;
+```
+
+## Query Output
+
+<img width="985" height="151" alt="image" src="https://github.com/user-attachments/assets/d73e3003-b2a7-44d8-9cc0-bd87d3c1a562" />
+
+## Query Logic
+
+LEFT JOIN keeps all customers from the customers table.
+
+It tries to find matching orders using customer_id.
+
+Customers without orders get NULL values in the orders table columns.
+
+WHERE o.order_id IS NULL filters only customers who have not placed any orders.
+
+The result shows customers with no order history.
+
+---
+
+
+
+
