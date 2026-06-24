@@ -400,6 +400,12 @@ The **UPDATE** statement modifies existing records in a table. The **SET** claus
 
 ---
 
+## 👤 Author: Sunil Pandey  
+## 📧 Contact: sunilpandey2468@gmail.com
+
+---
+
+
 
 
 
