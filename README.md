@@ -342,6 +342,65 @@ The **GROUP BY** clause groups employees based on `department_id`. The **COUNT()
 
 ---
 
+## Scenario 11: Retrieving the First 5 Records from a Table
+
+You need to fetch only the first 5 records from an `orders` table. How would you do it?
+
+### Table Structure: `orders`
+
+| order_id | customer_id | order_date | total_amount | product_id |
+|-----------|------------|------------|-------------|------------|
+| INTEGER (PK) | INTEGER | DATE | NUMERIC(10,2) | INTEGER |
+
+### SQL Query
+
+```sql
+SELECT *
+FROM orders
+LIMIT 5;
+```
+
+### 📊 Query Output
+
+<img width="916" height="252" alt="image" src="https://github.com/user-attachments/assets/a96d4bf8-0cff-4e21-915c-97f6697d4bd1" />
+
+
+### Query Logic
+
+The **LIMIT** clause restricts the number of rows returned by the query. `LIMIT 5` tells SQL to retrieve only the first 5 records from the `orders` table. This is commonly used to preview data, test queries, or work with large datasets without retrieving all records.
+
+---
+
+## Scenario 12: Updating an Employee's Department
+
+An employee's department changed. How would you update only that employee's department?
+
+### Table Structure: `employees`
+
+| employee_id | first_name | last_name | department_id | salary | hire_date | manager_id |
+|-------------|------------|-----------|---------------|--------|-----------|------------|
+| INTEGER (PK) | VARCHAR(50) | VARCHAR(50) | INTEGER | NUMERIC(10,2) | DATE | INTEGER |
+
+### SQL Query
+
+```sql
+UPDATE employees
+SET department_id = 5
+WHERE employee_id = 101;
+```
+
+### 📊 Query Output
+
+<img width="973" height="115" alt="image" src="https://github.com/user-attachments/assets/8d2bbda7-f2a3-4315-99a3-403faf51b629" />
+
+
+### Query Logic
+
+The **UPDATE** statement modifies existing records in a table. The **SET** clause assigns a new value to the `department_id` column. The **WHERE** clause ensures that only the employee with `employee_id = 101` is updated. Without the `WHERE` clause, all employees would be assigned to department 5.
+
+---
+
+
 
 
 
