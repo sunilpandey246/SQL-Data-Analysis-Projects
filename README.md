@@ -311,6 +311,38 @@ The **COUNT()** function counts the number of employees in each department. The 
 
 ---
 
+## Scenario 10: Finding Departments with More Than 3 Employees
+
+A report should show only departments with more than 3 employees. Which clause would you use after GROUP BY?
+
+### Table Structure: `employees`
+
+| employee_id | first_name | last_name | department_id | salary | hire_date | manager_id |
+|-------------|------------|-----------|---------------|--------|-----------|------------|
+| INTEGER (PK) | VARCHAR(50) | VARCHAR(50) | INTEGER | NUMERIC(10,2) | DATE | INTEGER |
+
+### SQL Query
+
+```sql
+SELECT department_id,
+       COUNT(*) AS employee_count
+FROM employees
+GROUP BY department_id
+HAVING COUNT(*) > 3;
+```
+
+### 📊 Query Output
+
+<img width="999" height="200" alt="image" src="https://github.com/user-attachments/assets/b0f106bd-7445-42d5-912a-d72062bcf4de" />
+
+
+### Query Logic
+
+The **GROUP BY** clause groups employees based on `department_id`. The **COUNT()** function calculates the number of employees in each department. The **HAVING** clause filters the grouped results and returns only those departments where the employee count is greater than 3.
+
+---
+
+
 
 
 
